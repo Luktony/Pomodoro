@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POMODORO</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-slate-900 flex justify-center items-center min-h-screen">
+    <section id="container" class="flex w-1040 h-480 border-cyan-300 border-2">
+      <div
+        id="pomodoro"
+        class="bg-slate-500 flex-grow flex items-center justify-center"
+      >
+        <div id="timer-total" class="flex-col border-2 border-black w-400 h-400">
+          <div id="container-timer" class=" border-2 p-2 m-2 text-center ">
+         
+              <h3 class="text-4xl font-bold">Seção-0</h3>
+              <h1 class="text-8xl">25:00</h1>
+              <button id="start " class="border-2 border-black m-2 p-2 max-w-20 ">Começar</button>
+              <button id="pause" class="border-2 border-black m-2 p-2 min-w-20">Pausar</button>
+              <button id="reset" class="border-2 border-black m-2 p-2 min-w-20">Resetar</button>
+            
+          </div>
+          <div id="container-bklg " class="flex  border-2 p-2 m-2">
+            
+            <div id="bk" class=" flex-1 text-center max-w-80">
+              <h1 class=" font-medium text-xl">5:00
+                <p>Descanço curto-0</p>
+              </h1>
+              
+            </div>
+            <div id="lg" class="flex-1 text-center max-w-80">
+              <h1 class=" font-medium text-xl ">25:00
+                <p>Descanço longo-0</p>
+              </h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="tasks"
+        class="bg-slate-100 flex items-center justify-center flex-grow"
+      >
+        <div id="task" class="border-2 w-400 h-400"></div>
+      </div>
+    </section>
+
+    <script src="/src/app.js"></script>
+  </body>
+</html>
